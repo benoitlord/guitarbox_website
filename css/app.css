@@ -1,0 +1,347 @@
+@font-face{
+	src: url("../fonts/Mukta-Bold.ttf");
+	font-family: "Mukta Bold";
+}
+
+@font-face{
+	src: url("../fonts/Mukta-Medium.ttf");
+	font-family: "Mukta Medium";
+}
+
+@font-face{
+	src: url("../fonts/Mukta-Regular.ttf");
+	font-family: "Mukta Regular";
+}
+
+@font-face{
+	src: url("../fonts/Roboto-Bold.ttf");
+	font-family: "Roboto Bold";
+}
+
+@font-face{
+	src: url("../fonts/Roboto-Regular.ttf");
+	font-family: "Roboto Regular";
+}
+
+.section-1, .section-2, .section-3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.section-1{
+	background-color: white;
+}
+
+.section-2{
+	background-color: #663317;
+	color: white;
+}
+
+.section-3{
+	background-color: #b78a18;
+}
+
+.section-3 a{
+	color: #ffffff;
+}
+
+.section-2 label{
+	color: white;
+}
+
+*{
+	font-family: "Roboto Regular";
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: "Mukta Bold";
+}
+
+p{
+	font-size: 18px;
+}
+
+textarea{
+	resize: none;
+}
+
+.footer{
+	background-color: black;
+	color: white;
+	padding-top: 45px;
+	padding-bottom: 25px;
+}
+
+#contact-form input:not([type="submit"]), #contact-form select, #contact-form textarea{
+	background-color: #562707;
+	border: none;
+	color: white;
+}
+
+.top-bar, .dropdown.menu{
+	background-color: #a57711;
+	color: white;
+}
+
+.top-bar .menu-text{
+	font-weight: bold;
+}
+
+.top-bar a {
+	color: white;
+}
+
+.callout.success{
+	background-color: #077100;
+	color: white;
+}
+
+.callout.alert{
+	background-color: #aa0000;
+	color: white;
+}
+
+.tabs-title a:focus{
+	outline: none!important;
+}
+
+.download{
+	margin-bottom: 30px;
+}
+
+.top{
+	position: fixed;
+	right: 0px;
+	bottom: 50px;
+	display: block;
+	background-color: #b78a18;
+	border: 2px solid black;
+	border-radius: 3px;
+	transform: translateX(50px);
+	
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.top.visible{
+	transform: translateX(0px);
+}
+
+.top:hover{
+	cursor: pointer;
+}
+
+.top i{
+	text-align: center;
+	margin: 5px 10px;
+}
+
+.menu{
+	position: fixed;
+	left: 15px;
+	top: 15px;
+	display: block;
+	background-color: #663317;
+	border: 2px solid black;
+	border-radius: 3px;
+}
+
+.menu.visible{
+	transform: translateX(0px);
+}
+
+.menu:hover{
+	cursor: pointer;
+}
+
+.menu i{
+	text-align: center;
+	margin: 8px 10px;
+	color: white;
+}
+
+.main-menu h1{
+	font-size: 2rem;
+}
+
+.main-menu .text{
+	width: 75%;
+	padding: 10px;
+	height: 35px;
+	margin-left: 25%;
+}
+
+.main-menu .fa{
+	height: 35px;
+	width: 20%;
+	margin-right: 5%;
+	float: left;
+	text-align: center;
+	color: black;
+}
+
+.main-menu .link{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	display: block;
+}
+
+@media (min-width: 668px){
+	.mobile{
+		display: none;
+	}
+}
+
+@media (max-width: 667px){
+	h2, .h2{
+		font-size: 1.45rem;
+		margin-top: 10px;
+	}
+	.desktop{
+		display: none;
+	}
+	.section-1{
+		padding-top: 30px;
+	}
+}
+
+/* Missing */
+
+.missing{
+	/*background-color: #a57711;*/
+	background: url("../img/missing.svg") bottom right no-repeat, #a57711;
+	background-size: auto 900px;
+}
+
+.missing img{
+	height: 1000px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: -1;
+}
+
+.missing .text{
+	position: fixed;
+	left: 50px;
+	bottom: 110px;
+}
+
+.missing .text h1{
+	font-size: 330px;
+	line-height: 250px;
+	color: white;
+}
+
+.missing .text h2{
+	font-size: 37px;
+	margin-top: 50px;
+}
+
+@media (max-width: 1550px) and (min-width: 1231px){
+	.missing{
+		background-size: auto 700px;
+	}
+	.missing .text{
+		bottom: 69px;
+	}
+
+	.missing .text h1{
+		font-size: 280px;
+	}
+
+	.missing .text h2{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 1230px) and (min-width: 881px){
+	.missing{
+		background-size: auto 500px;
+	}
+	.missing .text{
+		bottom: 67px;
+	}
+
+	.missing .text h1{
+		font-size: 190px;
+	}
+
+	.missing .text h2{
+		font-size: 21px;
+		margin-top: -48px;
+	}
+}
+
+@media (max-width: 880px) and (min-width: 571px){
+	.missing{
+		background: url("../img/missing2.svg") bottom right no-repeat, #a57711;
+		background-size: auto 700px;
+	}
+	.missing .text{
+		bottom: 69px;
+	}
+
+	.missing .text h1{
+		font-size: 280px;
+	}
+
+	.missing .text h2{
+		font-size: 30px;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 570px) and (min-width: 451px){
+	.missing{
+		background: url("../img/missing2.svg") bottom right no-repeat, #a57711;
+		background-size: auto 700px;
+	}
+	.missing .text{
+		bottom: 69px;
+		left: 0px;
+		width: 100%;
+	}
+
+	.missing .text h1{
+		font-size: 200px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.missing .text h2{
+		font-size: 25px;
+		margin-top: 30px;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+@media (max-width: 450px){
+	.missing{
+		background: url("../img/missing2.svg") bottom right no-repeat, #a57711;
+		background-size: auto 700px;
+	}
+	.missing .text{
+		bottom: 69px;
+		left: 0px;
+		width: 100%;
+	}
+
+	.missing .text h1{
+		font-size: 170px;
+		text-align: center;
+		width: 100%;
+	}
+
+	.missing .text h2{
+		font-size: 20px;
+		margin-top: 36px;
+		text-align: center;
+		width: 100%;
+	}
+}
